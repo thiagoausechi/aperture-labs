@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  #root {
+    @apply h-screen overflow-hidden flex flex-col;
+  }
+}
+
+body {
+  background: radial-gradient(
+    50% 100% at 50% 0%,
+    #fdfdfd 0%,
+    #d4d4d4 67.48%,
+    #bfbfbf 100%
+  );
+}
