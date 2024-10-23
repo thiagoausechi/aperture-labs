@@ -11,6 +11,15 @@ export default {
         portal:
           "linear-gradient(90deg, rgba(27,92,182,1) 0%, rgba(92,157,196,1) 33%, rgba(214,154,108,1) 67%, rgba(204,129,58,1) 100%)",
       },
+      transitionProperty: {
+        cursor: [
+          "transform",
+          "width",
+          "height",
+          "opacity",
+          "border-radius",
+        ].join(","),
+      },
     },
   },
   plugins: [],
