@@ -1,13 +1,13 @@
 import Glados from "@/components/models/Glados";
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Fragment, Suspense } from "react";
 import { useHomePageLogic } from "./hook";
 
 export const Home = () => {
   const { camera } = useHomePageLogic();
 
   return (
-    <main className="container grow grid grid-cols-12 gap-6">
+    <Fragment>
       <Canvas
         style={{ position: "absolute", zIndex: -1 }}
         className="inset-0"
@@ -22,6 +22,6 @@ export const Home = () => {
           />
         </Suspense>
       </Canvas>
-    </main>
+    </Fragment>
   );
 };
