@@ -3,7 +3,7 @@ import { Home } from "@/pages";
 import { createBrowserRouter, type RouteObject } from "react-router-dom";
 
 type Route = RouteObject & {
-  label: string;
+  label?: string;
 };
 
 export const pages: Route[] = [
@@ -29,7 +29,6 @@ export const pages: Route[] = [
   },
   {
     path: "/enrollment",
-    label: "Enrollment",
     element: <h1>Enrollment Form</h1>,
   },
 ];
