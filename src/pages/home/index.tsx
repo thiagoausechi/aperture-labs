@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <main className="container grow grid grid-cols-12 gap-6">
       <Canvas
-        style={{ position: "absolute" }}
+        style={{ position: "absolute", zIndex: -1 }}
         className="inset-0"
         camera={camera}
       >
