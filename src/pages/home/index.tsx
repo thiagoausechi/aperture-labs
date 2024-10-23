@@ -17,7 +17,7 @@ export const Home = () => {
         <Suspense fallback={null}>
           <Glados
             scale={[0.001, 0.001, 0.001]}
-            position={[8.2, 26.01, -37.6]}
+            position={[4.8, 26.01, -37.6]}
             rotation={[-0.3, 2.7, 0]}
           />
         </Suspense>
